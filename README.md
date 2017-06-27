@@ -1,4 +1,4 @@
-Fork of h4cc/phpqatools [![Build Status](https://travis-ci.org/h4cc/phpqatools.png?branch=master)](https://travis-ci.org/h4cc/phpqatools)
+Fork of h4cc/phpqatools 
 ==========
 
 This is a composer meta package for installing PHP Quality Assurance Tools with only one dependency.
