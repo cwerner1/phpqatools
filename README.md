@@ -1,4 +1,4 @@
-h4cc/phpqatools [![Build Status](https://travis-ci.org/h4cc/phpqatools.png?branch=master)](https://travis-ci.org/h4cc/phpqatools)
+Fork of h4cc/phpqatools [![Build Status](https://travis-ci.org/h4cc/phpqatools.png?branch=master)](https://travis-ci.org/h4cc/phpqatools)
 ==========
 
 This is a composer meta package for installing PHP Quality Assurance Tools with only one dependency.
@@ -45,15 +45,3 @@ require-dev: {
 More info about development dependencies: http://getcomposer.org/doc/04-schema.md#require-dev
 
 
-# Versioning
-
-This package will be updated, when newer or other stable packages become available. Fell free to suggest tools if they are missing.
-
-To avoid problems you may not use composer version constraints like this "~1.1". Such a constraint will always upgrade to the newest "1.\*" version which might break your toolchain.
-In such a case, simply stick to a minor-version like "1.2.\*".
-
-
-# Todo
-
-A phing or task buildfile may be included someday.
-I hope some more tools get available in stable versions, so i can add them here.

@@ -1,5 +1,5 @@
 {
-    "name": "h4cc/phpqatools",
+    "name": "travis-south/phpqatools",
     "description": "A meta composer package for PHP QA Tools.",
     "keywords": ["php", "qa", "tools", "debug"],
     "type": "metapackage",
@@ -16,20 +16,16 @@
         "vendor-dir": "vendor"
     },
     "require": {
-        "phpunit/phpunit": "~4.0|~5.0",
-        "phpunit/dbunit": "~1.0|~2.0",
-
-        "phploc/phploc": "~2.0",
-        "sebastian/phpcpd": "~2.0",
-
-        "pdepend/pdepend": "~2.0",
-        "phpmd/phpmd": "~2.0",
-        "squizlabs/php_codesniffer": "~2.0",
-
-        "fabpot/php-cs-fixer": "~1.0",
-        "sensiolabs/security-checker": "~3.0",
-
-        "behat/behat": "~3.0"
+        "phpunit/phpunit": "6.*",
+        "phpunit/dbunit": "3.*",
+        "phploc/phploc": "4.*",
+        "sebastian/phpcpd": "3.*",
+        "pdepend/pdepend": "2.*",
+        "phpmd/phpmd": "2.*",
+        "squizlabs/php_codesniffer": "3.*",
+        "friendsofphp/php-cs-fixer": "2.*",
+        "sensiolabs/security-checker": "4.*",
+        "behat/behat": "3.*"
     },
     "suggest": {
         "sami/sami": "Documentation generator used for Symfony2 docs.",
@@ -37,10 +33,5 @@
         "phpdocumentor/phpdocumentor": "Documentation Generator for PHP.",
         "theseer/phpdox": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing.",
         "mayflower/php-codebrowser": "A code browser that augments the code with information from various QA tools."
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0-dev"
-        }
     }
 }
