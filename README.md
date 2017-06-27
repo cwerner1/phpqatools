@@ -31,14 +31,14 @@ php vendor/bin/phpmd
 To use this package, add it as as "dev" dependency with this command:
 
 ```bash
-composer require h4cc/phpqatools --dev
+composer require travis-south/phpqatools --dev
 ```
 
 Or modify your composer.json as followed:
 
 ```json
 require-dev: {
-  "h4cc/phpqatools": "*"
+  "travis-south/phpqatools": "*"
 }
 ```
 
