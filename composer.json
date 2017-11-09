@@ -16,16 +16,17 @@
         "vendor-dir": "vendor"
     },
     "require": {
-        "phpunit/phpunit": "6.*",
-        "phpunit/dbunit": "3.*",
-        "phploc/phploc": "4.*",
-        "sebastian/phpcpd": "3.*",
-        "pdepend/pdepend": "2.*",
-        "phpmd/phpmd": "2.*",
-        "squizlabs/php_codesniffer": "2.*",
-        "friendsofphp/php-cs-fixer": "2.*",
-        "sensiolabs/security-checker": "3.*",
-        "behat/behat": "3.*"
+        "php": "^7.1",
+        "phpunit/phpunit": "^6.4.4",
+        "phpunit/dbunit": "^3.0.1",
+        "phploc/phploc": "^4.0.0",
+        "sebastian/phpcpd": "^3.0.0",
+        "pdepend/pdepend": "^2.5.0",
+        "phpmd/phpmd": "^2.6.0",
+        "squizlabs/php_codesniffer": "^3.1.1",
+        "friendsofphp/php-cs-fixer": "^2.8.0",
+        "sensiolabs/security-checker": "^4.1.6",
+        "behat/behat": "^3.4.1"
     },
     "suggest": {
         "sami/sami": "Documentation generator used for Symfony2 docs.",
