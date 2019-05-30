@@ -17,16 +17,16 @@
     },
     "require": {
         "php": "^7.1",
-        "phpunit/phpunit": "^6.4.4",
-        "phpunit/dbunit": "^3.0.1",
-        "phploc/phploc": "^4.0.0",
-        "sebastian/phpcpd": "^3.0.0",
-        "pdepend/pdepend": "^2.5.0",
+        "phpunit/phpunit": "^8.1.0",
+        "phploc/phploc": "^5.0.0",
+        "sebastian/phpcpd": "^4.1.0",
+        "pdepend/pdepend": "^2.5.2",
         "phpmd/phpmd": "^2.6.0",
-        "squizlabs/php_codesniffer": "^3.1.1",
-        "friendsofphp/php-cs-fixer": "^2.8.0",
-        "sensiolabs/security-checker": "^4.1.6",
-        "behat/behat": "^3.4.1"
+        "squizlabs/php_codesniffer": "^3.4.2",
+        "friendsofphp/php-cs-fixer": "^2.15.0",
+        "sensiolabs/security-checker": "^5.0.3",
+        "behat/behat": "^3.5.0",
+        "phpstan/phpstan-symfony": "^0.11.6"
     },
     "suggest": {
         "sami/sami": "Documentation generator used for Symfony2 docs.",
