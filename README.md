@@ -17,6 +17,7 @@ Included in this package are:
 - Sensiolabs/Security-Checker
 - Behat
 - PHPStan
+- Phan
 
 
 # Usage

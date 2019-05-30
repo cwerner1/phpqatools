@@ -26,7 +26,8 @@
         "friendsofphp/php-cs-fixer": "^2.15.0",
         "sensiolabs/security-checker": "^5.0.3",
         "behat/behat": "^3.5.0",
-        "phpstan/phpstan-symfony": "^0.11.6"
+        "phpstan/phpstan-symfony": "^0.11.6",
+        "phan/phan": "^2.0.0"
     },
     "suggest": {
         "sami/sami": "Documentation generator used for Symfony2 docs.",
