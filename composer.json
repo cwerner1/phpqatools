@@ -1,7 +1,12 @@
 {
-    "name": "travis-south/phpqatools",
+    "name": "cwerner1/phpqatools",
     "description": "A meta composer package for PHP QA Tools.",
-    "keywords": ["php", "qa", "tools", "debug"],
+    "keywords": [
+        "php",
+        "qa",
+        "tools",
+        "debug"
+    ],
     "type": "metapackage",
     "license": "MIT",
     "authors": [
@@ -16,18 +21,19 @@
         "vendor-dir": "vendor"
     },
     "require": {
-        "php": "^7.1",
-        "phpunit/phpunit": "^8.1.0",
-        "phploc/phploc": "^5.0.0",
-        "sebastian/phpcpd": "^4.1.0",
-        "pdepend/pdepend": "^2.5.2",
-        "phpmd/phpmd": "^2.6.0",
-        "squizlabs/php_codesniffer": "^3.4.2",
-        "friendsofphp/php-cs-fixer": "^2.15.0",
-        "sensiolabs/security-checker": "^5.0.3",
-        "behat/behat": "^3.5.0",
-        "phpstan/phpstan-symfony": "^0.11.6",
-        "phan/phan": "^2.0.0"
+        "php": "^8.1",
+        "phpunit/phpunit": "*",
+        "phploc/phploc": "*",
+        "sebastian/phpcpd": "*",
+        "pdepend/pdepend": "*",
+        "phpmd/phpmd": "*",
+        "squizlabs/php_codesniffer": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "sensiolabs/security-checker": "*",
+        "behat/behat": "*",
+        "phpstan/phpstan-symfony": "*",
+        "phan/phan": "*",
+        "phpcompatibility/php-compatibility": "*"
     },
     "suggest": {
         "sami/sami": "Documentation generator used for Symfony2 docs.",
@@ -35,5 +41,9 @@
         "phpdocumentor/phpdocumentor": "Documentation Generator for PHP.",
         "theseer/phpdox": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing.",
         "mayflower/php-codebrowser": "A code browser that augments the code with information from various QA tools."
+    },
+    "scripts": {
+        "sniffer:php8": "phpcs -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.0",
+        "sniffer:php81": "phpcs -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.1"
     }
 }
