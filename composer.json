@@ -38,8 +38,8 @@
     "mayflower/php-codebrowser": "A code browser that augments the code with information from various QA tools."
   },
   "scripts": {
-    "sniffer:php8": "phpcs -d memory_limit=4048M -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.0",
-    "sniffer:php81": "phpcs -d memory_limit=4048M -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.1",
-    "sniffer:php82": "phpcs -d memory_limit=4048M -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.2"
+    "sniffer:php8": "phpcs -d memory_limit=4048M --extensions=php -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.0",
+    "sniffer:php81": "phpcs -d memory_limit=4048M --extensions=php -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.1",
+    "sniffer:php82": "phpcs -d memory_limit=4048M --extensions=php -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.2"
   }
 }
