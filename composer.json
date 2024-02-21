@@ -1,49 +1,45 @@
 {
-    "name": "cwerner1/phpqatools",
-    "description": "A meta composer package for PHP QA Tools.",
-    "keywords": [
-        "php",
-        "qa",
-        "tools",
-        "debug"
-    ],
-    "type": "metapackage",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Irvin Capagcuan",
-            "email": "irvin@capagcuan.org",
-            "homepage": "https://www.capagcuan.org"
-        }
-    ],
-    "config": {
-        "bin-dir": "bin",
-        "vendor-dir": "vendor"
-    },
-    "require": {
-        "php": "^8.1",
-        "phpunit/phpunit": "*",
-        "phploc/phploc": "*",
-        "sebastian/phpcpd": "*",
-        "pdepend/pdepend": "*",
-        "phpmd/phpmd": "*",
-        "squizlabs/php_codesniffer": "*",
-        "friendsofphp/php-cs-fixer": "*",
-        "sensiolabs/security-checker": "*",
-        "behat/behat": "*",
-        "phpstan/phpstan-symfony": "*",
-        "phan/phan": "*",
-        "phpcompatibility/php-compatibility": "*"
-    },
-    "suggest": {
-        "sami/sami": "Documentation generator used for Symfony2 docs.",
-        "apigen/apigen": "Documentation Generator using nette and texy.",
-        "phpdocumentor/phpdocumentor": "Documentation Generator for PHP.",
-        "theseer/phpdox": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing.",
-        "mayflower/php-codebrowser": "A code browser that augments the code with information from various QA tools."
-    },
-    "scripts": {
-        "sniffer:php8": "phpcs -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.0",
-        "sniffer:php81": "phpcs -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.1"
+  "name": "cwerner1/phpqatools",
+  "description": "A meta composer package for PHP QA Tools.",
+  "keywords": ["php", "qa", "tools", "debug"],
+  "type": "metapackage",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Irvin Capagcuan",
+      "email": "irvin@capagcuan.org",
+      "homepage": "https://www.capagcuan.org"
     }
+  ],
+  "config": {
+    "bin-dir": "bin",
+    "vendor-dir": "vendor"
+  },
+  "require": {
+    "php": "^8.1",
+    "phpunit/phpunit": "*",
+    "phploc/phploc": "*",
+    "sebastian/phpcpd": "*",
+    "pdepend/pdepend": "*",
+    "phpmd/phpmd": "*",
+    "squizlabs/php_codesniffer": "*",
+    "friendsofphp/php-cs-fixer": "*",
+    "sensiolabs/security-checker": "*",
+    "behat/behat": "*",
+    "phpstan/phpstan-symfony": "*",
+    "phan/phan": "*",
+    "phpcompatibility/php-compatibility": "*"
+  },
+  "suggest": {
+    "sami/sami": "Documentation generator used for Symfony2 docs.",
+    "apigen/apigen": "Documentation Generator using nette and texy.",
+    "phpdocumentor/phpdocumentor": "Documentation Generator for PHP.",
+    "theseer/phpdox": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing.",
+    "mayflower/php-codebrowser": "A code browser that augments the code with information from various QA tools."
+  },
+  "scripts": {
+    "sniffer:php8": "phpcs -d memory_limit=4048M -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.0",
+    "sniffer:php81": "phpcs -d memory_limit=4048M -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.1",
+    "sniffer:php82": "phpcs -d memory_limit=4048M -p ./ --standard=vendor/phpcompatibility/php-compatibility/PHPCompatibility --runtime-set testVersion 8.2"
+  }
 }
