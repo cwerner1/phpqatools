@@ -16,7 +16,7 @@
     "vendor-dir": "vendor"
   },
   "require": {
-    "php": "^8.1",
+    "php": "^8.2",
     "phpunit/phpunit": "*",
     "phploc/phploc": "*",
     "sebastian/phpcpd": "*",
